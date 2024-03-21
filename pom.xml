@@ -66,15 +66,15 @@
     </modules>
 
     <properties>
-        <slf4j.version>1.7.25</slf4j.version>
-        <poi.version>4.1.2</poi.version>
-        <xdocreport.version>2.0.2</xdocreport.version>
-        <pdfbox.version>2.0.24</pdfbox.version>
-        <jakarta.version>2.3.2</jakarta.version>
-        <jaxb.version>2.3.2</jaxb.version>
+        <slf4j.version>2.0.12</slf4j.version>
+        <poi.version>5.2.5</poi.version>
+        <xdocreport.version>2.0.4</xdocreport.version>
+        <pdfbox.version>2.0.30</pdfbox.version>
+        <jakarta.version>2.3.3</jakarta.version>
+        <jaxb.version>2.3.3</jaxb.version>
 
-        <groovy.version>3.0.8</groovy.version>
-        <spock.version>2.0-groovy-3.0</spock.version>
+        <groovy.version>3.0.21</groovy.version>
+        <spock.version>2.4-M2-groovy-3.0</spock.version>
         <cglib.version>3.3.0</cglib.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -82,6 +82,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>2.18.0</version>
+            </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
